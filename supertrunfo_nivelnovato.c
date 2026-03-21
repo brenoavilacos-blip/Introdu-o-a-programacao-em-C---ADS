@@ -36,7 +36,7 @@ int main(){
     scanf("%s", &Estado1);
 
     printf("Digite o codigo da carta( Utiliza a letra definida para o Estado e um numero. Ex: A01,B03): \n");
-    scanf("%s", &Codigo1);
+    scanf("%3s", &Codigo1);
    
     printf("Digite o nome da cidade: \n");
     scanf("%s", &Cidade1);
@@ -63,7 +63,7 @@ int main(){
     scanf("%s", &Estado2);
 
     printf("Digite o codigo da carta( Utiliza a letra definida para o Estado e um numero. Ex: A01,B03): \n");
-    scanf("%s", &Codigo2);
+    scanf("%3s", &Codigo2);
    
     printf("Digite o nome da cidade: \n");
     scanf("%s", &Cidade2);
