@@ -5,8 +5,8 @@ int main(){
     // Variáveis para  a prImeira carta.
     char carta1;
     char Estado1;
-    char Codigo1[3];
-    char Cidade1;
+    char Codigo1[4];
+    char Cidade1[100];
     int Populacao1;
     float Area1;
     float PIB1;
@@ -17,8 +17,8 @@ int main(){
     // Variáveis para a segunda carta.
     char carta2;
     char Estado2;
-    char Codigo2[3];
-    char Cidade2;
+    char Codigo2[4];
+    char Cidade2[100];
     int Populacao2;
     float Area2;
     float PIB2;
@@ -30,16 +30,16 @@ int main(){
    // Obtendo os dados da carta 1 utilizando as funções pritf e scanf.
 
     printf("Digite o numero da primeira carta: (ex: 1)");
-    scanf("%s", &carta1);
+    scanf(" %c", &carta1);
    
     printf("Digite o estado (Utilize uma letra de A a H para definir o nome do estado e use letra maiúscula.): \n");
-    scanf("%s", &Estado1);
+    scanf(" %c", &Estado1);
 
     printf("Digite o codigo da carta( Utiliza a letra definida para o Estado e um numero. Ex: A01,B03): \n");
-    scanf("%3s", &Codigo1);
+    scanf(" %4s", Codigo1);
    
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &Cidade1);
+    scanf("%s", Cidade1);
 
     printf("Digite a polupacao da cidade: \n");
     scanf("%d", &Populacao1);
@@ -50,23 +50,23 @@ int main(){
     printf("Digite o PIB da cidade: \n");
     scanf("%f", &PIB1);
 
-    printf("Digite o numero de pontos turisticos da cidade: \n");
+    printf("Digite o numero de pontos turisticos da cidade: \n\n");
     scanf("%d", &Pontos_turisticos1);
       
 
     // Obtendo os dados da carta 2 utilizando as funções pritf e scanf.
 
     printf("Digite o numero da segunda carta: (ex: 1)");
-    scanf("%s", &carta2);
+    scanf(" %c", &carta2);
    
     printf("Digite o estado (Utilize uma letra de A a H para definir o nome do estado e use letra maiúscula.): \n");
-    scanf("%s", &Estado2);
+    scanf(" %c", &Estado2);
 
     printf("Digite o codigo da carta( Utiliza a letra definida para o Estado e um numero. Ex: A01,B03): \n");
-    scanf("%3s", &Codigo2);
+    scanf("%4s", Codigo2);
    
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &Cidade2);
+    scanf("%s", Cidade2);
 
     printf("Digite a polupacao da cidade: \n");
     scanf("%d", &Populacao2);
@@ -77,7 +77,7 @@ int main(){
     printf("Digite o PIB da cidade: \n");
     scanf("%f", &PIB2);
 
-    printf("Digite o numero de pontos turisticos da cidade: \n");
+    printf("Digite o numero de pontos turisticos da cidade: \n\n");
     scanf("%d", &Pontos_turisticos2);  
 
     //Calculando os valores da densidade populacional e o PIB per capta da carta 1.
@@ -89,8 +89,8 @@ int main(){
     
 
     
-    printf("Carta: &s\n", carta1);    
-    printf("Estado: %s\n", Estado1);
+    printf("Carta: %c\n", carta1);    
+    printf("Estado: %c\n", Estado1);
     printf("Codigo: %s\n", Codigo1);
     printf("Nome da Cidade: %s\n", Cidade1);
     printf("População: %d\n", Populacao1);
@@ -98,10 +98,10 @@ int main(){
     printf("PIB: %.2f\n", PIB1);
     printf("Pontos turisticos: %d\n", Pontos_turisticos1);
     printf("A desidade populaciona é: %.2f\n", densidade1);
-    printf("O PIB percapta é: %.2f\n", pibpercapta1);
+    printf("O PIB percapta é: %.2f\n\n", pibpercapta1);
 
-    printf("Carta: %s\n", carta2);    
-    printf("Estado: %s\n", Estado2);
+    printf("Carta: %c\n", carta2);    
+    printf("Estado: %c\n", Estado2);
     printf("Codigo: %s\n", Codigo2);
     printf("Nome da Cidade: %s\n", Cidade2);
     printf("População: %d\n", Populacao2);
@@ -109,7 +109,7 @@ int main(){
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos turisticos: %d\n", Pontos_turisticos2);
     printf("A desidade populaciona é: %.2f\n", densidade2);
-    printf("O PIB percapta é: %.2f\n", pibpercapta2);
+    printf("O PIB percapta é: %.2f\n\n", pibpercapta2);
 
            
 
